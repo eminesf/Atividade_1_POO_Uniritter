@@ -5,7 +5,7 @@ public class Carro {
 	private String modelo; 
 	private String cor;
 	private Integer ano;
-	private String marca;
+	private Marca marca;
 	private String chassi;
 	private Proprietario dono;
 	private Integer velMax;
@@ -18,8 +18,9 @@ public class Carro {
 	private Integer marchaAtual;
 	private Double consumoMedio;
 	
-	public Carro(Proprietario newProprietario) {
+	public Carro(Proprietario newProprietario , Marca newMarca) {
 		this.dono = newProprietario;
+		this.marca = newMarca;
 	}
 	
 	public void Acelerar() {
