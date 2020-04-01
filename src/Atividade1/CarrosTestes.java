@@ -8,7 +8,7 @@ public class CarrosTestes {
 		
 		Carro carro1 = new Carro(prop1);
 		
-		System.out.println(carro1.CombustivelnoTanque(10));
+		System.out.println(carro1.ConsumoMedio(10.0));
 	}
 
 }
